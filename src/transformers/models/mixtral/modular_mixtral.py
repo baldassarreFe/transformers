@@ -572,3 +572,13 @@ class MixtralForTokenClassification(MistralForTokenClassification):
 
 class MixtralForQuestionAnswering(MistralForQuestionAnswering):
     pass
+
+
+__all__ = [
+    "MixtralForCausalLM",
+    "MixtralForQuestionAnswering",
+    "MixtralModel",
+    "MixtralPreTrainedModel",
+    "MixtralForSequenceClassification",
+    "MixtralForTokenClassification",
+]
