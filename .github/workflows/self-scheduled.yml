@@ -45,7 +45,7 @@ env:
 
 jobs:
   setup:
-    if: contains(fromJSON('["run_models_gpu", "run_quantization_torch_gpu"]'), inputs.job)
+    if: contains(fromJSON('["run_models_gpu", "run_trainer_and_fsdp_gpu", "run_quantization_torch_gpu"]'), inputs.job)
     name: Setup
     strategy:
       matrix:
